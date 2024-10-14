@@ -1,11 +1,15 @@
 {
-  "name": "international-week",
-  "version": "1.0.0",
-  "description": "placeholder",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "filip ryan aaron hunslund",
-  "license": "MIT"
+	"name": "international-week",
+	"version": "1.0.0",
+	"description": "placeholder",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tsc": "tsc"
+	},
+	"author": "filip ryan aaron hunslund",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^5.6.3"
+	}
 }
