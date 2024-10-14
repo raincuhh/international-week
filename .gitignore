@@ -1,0 +1,7 @@
+# Test pull
+
+.dist/
+bin/
+
+#Env
+.env
