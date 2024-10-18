@@ -51,7 +51,6 @@
           <div class="nav_header">
             <p>
               <span>La Tavola del Sapore</span>
-
               <span>/ Home</span>
             </p>
           </div>
