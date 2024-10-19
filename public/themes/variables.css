@@ -22,9 +22,7 @@
    --s-transition-hover-base: all ease-in-out 100ms;
 
    --s-loader-max-width: clamp(64rem, 84vw, 104rem);
-   --s-page-side-padding: clamp(0rem, 5.4vw, 3rem)
-
-   --s-nav-top: clamp(1rem, 5.4vw, 3rem);
+   --s-page-side-padding: clamp(1rem, 3vw, 3rem);
 
    --xs-width: 320px;
    --sm-width: 576px;
