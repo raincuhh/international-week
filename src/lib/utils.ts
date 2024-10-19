@@ -1,4 +1,4 @@
-function create_uuid(): string {
+export function create_uuid(): string {
    let pattern: string = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
    let result: string = "";
 
@@ -16,29 +16,29 @@ function create_uuid(): string {
    }
    return result;
 }
-function create(str: string): Element {
+export function create(str: string): Element {
    return document.createElement(str);
 }
-function get_id(str: string): Element | null {
+export function get_id(str: string): Element | null {
    return document.getElementById(str);
 }
-function query(str: string): Element | null {
+export function query(str: string): Element | null {
    return document.querySelector(str);
 }
-function query_all(str: string): NodeListOf<Element> {
+export function query_all(str: string): NodeListOf<Element> {
    return document.querySelectorAll(str);
 }
-function set_doc_title(str: string): void {
+export function set_doc_title(str: string): void {
    document.title = str;
 }
-function uppercaseify(str: string): string {
+export function uppercaseify(str: string): string {
    let firstChar = str.charAt(0);
    if (firstChar !== firstChar.toUpperCase()) {
       str = str.charAt(0).toUpperCase() + str.slice(1);
    }
    return str;
 }
-function uppercaseify_str(str: string) {
+export function uppercaseify_str(str: string) {
    let parts = str.split(" ");
    parts.forEach((part, index) => {
       parts[index] = uppercaseify(part);
@@ -46,5 +46,3 @@ function uppercaseify_str(str: string) {
 
    return parts.join(" ");
 }
-
-export { create_uuid, create, get_id, query, query_all, set_doc_title, uppercaseify, uppercaseify_str };

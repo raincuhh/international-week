@@ -5,6 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Il Sapore dell'Italia | home" />
+  <meta property="og:title" content="Il Sapore dell'Italia | Home">
+  <meta property="og:description" content="Welcome to Il Sapore dell'Italia, the best Italian restaurant in town.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Il Sapore dell'Italia | Home">
+  <meta name="twitter:description" content="Enjoy authentic Italian cuisine at Il Sapore dell'Italia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" href="../themes/fonts.css" as="style">
+  <link rel="preload" href="../themes/variables.css" as="style">
   <title>Il Sapore dell'Italia | Home</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon/favicon-32x32.png" />
@@ -50,32 +59,23 @@
     <nav id="nav">
       <div class="container">
         <div class="cont">
-          <div class="nav_header">
-            <a href="./home.php" target="_blank" rel="noopener noreferrer">
-              <p>Il Sapore dell'Italia</p>
-            </a>
-            <a href="" onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
-              <p>/ home</p>
-            </a>
+          <div class="in_cont" id="in_cont_nav">
+            <div class="nav_header">
+              <a href="./home.php" target="_blank" rel="noopener noreferrer">
+                <p>Il Sapore dell'Italia</p>
+              </a>
+              <a href="" onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
+                <p>/ home</p>
+              </a>
+            </div>
+            <aside class="nav_aside">
+              <div class="nav_aside_item_pill">
+                <a href="./booking.php" target="_blank" rel="noopener noreferrer">
+                  <p>book a table</p>
+                </a>
+              </div>
+            </aside>
           </div>
-          <aside class="nav_aside">
-            <ul class="nav_cat_list">
-              <li class="nav_cat_item" id="nav_cat_item_booking">
-                <div class="nav_cat_item_pill">
-                  <a href="./booking.php" target="_blank" rel="noopener noreferrer">
-                    <p>book a table</p>
-                  </a>
-                </div>
-              </li>
-              <li class="nav_cat_item" id="nav_cat_item_admin">
-                <div class="nav_cat_item_pill">
-                  <a href="./admin.php" target="_blank" rel="noopener noreferrer">
-                    <p>admin</p>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </aside>
         </div>
       </div>
     </nav>
@@ -84,11 +84,11 @@
         <section class="category" id="category_intro">
           <div class="container">
             <div class="cont">
-              <div class="in_cont">
+              <div class="in_cont" id="in_cont_intro">
                 <header class="intro_title">
                   <p>Il Sapore dell'Italia</p>
                 </header>
-                <div class="intro_image">
+                <div class="intro_bg">
                   <img src="../assets/images/italian_cuisine_bg_4.jpg" alt="Il Sapore dell'Italia Bg">
                 </div>
               </div>
@@ -96,16 +96,39 @@
           </div>
         </section>
         <section class="category" id="category_short_about">
-          <div class="container">awdawdawdaw</div>
+          <div class="container">
+            <div class="cont">
+              <div class="in_cont" id="in_cont_short_about"></div>
+            </div>
+          </div>
         </section>
         <section class="category" id="category_recommended_list">
-          <div class="container">awdadawdaw</div>
+          <div class="container">
+            <div class="cont">
+              <div class="in_cont" id="in_cont_recommended_list"></div>
+            </div>
+          </div>
         </section>
         <section class="category" id="category_long_about">
-          <div class="container">awdawdaw</div>
+          <div class="container">
+            <div class="cont">
+              <div class="in_cont" id="in_cont_long_about"></div>
+            </div>
+          </div>
+        </section>
+        <section class="category" id="category_location_contact">
+          <div class="container">
+            <div class="cont">
+              <div class="in_cont" id="in_cont_location_contact"></div>
+            </div>
+          </div>
         </section>
         <section class="category" id="category_footer">
-          <div class="container">awdawdawda</div>
+          <div class="container">
+            <div class="cont">
+              <div class="in_cont" id="in_cont_footer"></div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

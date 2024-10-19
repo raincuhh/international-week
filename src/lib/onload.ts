@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
    }
 
    console.log(
-      "%c La Tavola del Sapore",
+      "%cIl Sapore dell'Italia",
       "background-color: #FFF; color: #000000; font-size: 12px; padding: 8px 10px 6px; border-radius: 4px"
    );
 });

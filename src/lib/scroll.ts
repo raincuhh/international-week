@@ -4,12 +4,10 @@ import { Observer } from "gsap/Observer";
 
 gsap.registerPlugin(ScrollTrigger, Observer);
 
-function add_smooth_scroll() {
+export function add_smooth_scroll() {
    let html: HTMLElement = document.documentElement;
    let body: HTMLElement = document.body;
-
    let req_id: any = null;
-
    let scroller = {
       target: document.querySelector("#page_scroll"),
       ease: 0.04,
@@ -77,7 +75,7 @@ function add_smooth_scroll() {
    }
 }
 
-function lock_scrolling(val: boolean = true) {
+export function lock_scrolling(val: boolean = true) {
    let locked: string;
 
    switch (val) {
@@ -96,5 +94,3 @@ function lock_scrolling(val: boolean = true) {
       console.error("body element not found");
    }
 }
-
-export { add_smooth_scroll, lock_scrolling };
