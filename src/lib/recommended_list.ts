@@ -19,6 +19,7 @@ let placeholder_recommended_food = {
       name: "food1",
       price: 2193,
       desc: "lorem ipsum dolor sit amet",
+      image_path: "",
    },
 };
 
