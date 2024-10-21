@@ -51,7 +51,7 @@
   </script>
 
   <link rel="stylesheet" href="home.css">
-  <script defer type="module" src="../../out/lib/onload.js"></script>
+  <script defer type="module" src="../../out/lib/shared.js"></script>
 </head>
 
 <body>
@@ -98,7 +98,9 @@
         <section class="category" id="category_short_about">
           <div class="container">
             <div class="cont">
-              <div class="in_cont" id="in_cont_short_about"></div>
+              <div class="in_cont" id="in_cont_short_about">
+
+              </div>
             </div>
           </div>
         </section>
