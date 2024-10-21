@@ -12,13 +12,13 @@
   <meta name="twitter:title" content="Il Sapore dell'Italia | Home">
   <meta name="twitter:description" content="Enjoy authentic Italian cuisine at Il Sapore dell'Italia.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preload" href="../themes/fonts.css" as="style">
-  <link rel="preload" href="../themes/variables.css" as="style">
-  <title>Il Sapore dell'Italia | Home</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon/favicon-16x16.png" />
   <link rel="manifest" href="../assets/icons/favicon/site.webmanifest" />
+  <link rel="preload" href="../themes/fonts.css" as="style">
+  <link rel="preload" href="../themes/variables.css" as="style">
+  <title>Il Sapore dell'Italia | Home</title>
   <script defer>
     let date_now = new Date();
     let week_day_unfm = date_now.getDay();
@@ -52,6 +52,7 @@
 
   <link rel="stylesheet" href="home.css">
   <script defer type="module" src="../../out/lib/shared.js"></script>
+  <script defer type="module" src="../../out/lib/recommended_list.js"></script>
 </head>
 
 <body>
@@ -99,7 +100,26 @@
           <div class="container">
             <div class="cont">
               <div class="in_cont" id="in_cont_short_about">
-
+                <header class="short_about_title">
+                  <p>Il Sapore dell'Italia</p>
+                </header>
+                <article class="short_about_desc">
+                  <div>
+                    <p>
+                      Discover a taste of Italy at Il Sapore dell’Italia,
+                      where authentic Italian cuisine meets modern culinary flair.
+                      Since our founding in 2010, we've been serving up fresh,
+                      flavorful dishes inspired by the rich traditions of Italy.
+                      From handcrafted pastas to wood-fired pizzas, every meal is
+                      prepared with the finest local ingredients and a passion for quality.
+                    </p>
+                    <p>
+                      Whether you're in the mood for classic Italian favorites
+                      or contemporary takes on traditional recipes, our restaurant
+                      offers a true Italian dining experience in an unforgettable setting.
+                    </p>
+                  </div>
+                </article>
               </div>
             </div>
           </div>
@@ -107,7 +127,11 @@
         <section class="category" id="category_recommended_list">
           <div class="container">
             <div class="cont">
-              <div class="in_cont" id="in_cont_recommended_list"></div>
+              <div class="in_cont" id="in_cont_recommended_list">
+                <div class="recommended_list_grid">
+
+                </div>
+              </div>
             </div>
           </div>
         </section>
