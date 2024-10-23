@@ -56,7 +56,14 @@
 </head>
 
 <body>
-  <div id="app">
+  <?php
+  $sql_connection = mysqli_connect("sql7.freesqldatabase.com", "sql7739764", "NVenaCkSgl", "sql7739764");
+  if ($sql_connection->connect_error) {
+    echo ("Error: Something went wrong: " . $sql_connection->connect_error);
+    return;
+  }
+
+  ?>
     <nav id="nav">
       <div class="container">
         <div class="cont">
