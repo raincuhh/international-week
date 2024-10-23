@@ -49,15 +49,18 @@ function init() {
 }
 
 function add_recommended_list(list: Array<food_profile_minimal>) {
-   list.forEach((profile) => {
-      create_food_profile_html(profile);
+   const recommended_list_grid_div: Element = query("#in_cont_recommended_list .recommended_list_grid");
+   list.forEach((item_list: food_profile_minimal) => {
+      create_food_profile_html(item_list, recommended_list_grid_div);
    });
 }
 
-function create_food_profile_html(items: food_profile_minimal) {
+function create_food_profile_html(items: food_profile_minimal, recommended_list_grid_div: Element) {
+   // profile grid
    let profile_div: Element = create("div");
    profile_div.setAttribute("class", "recommended_food_profile");
-   profile_div.setAttribute("id", `recommened_food_profile_${items.name || "name"}`);
+   profile_div.setAttribute("id", `recommened_food_profile_${items.name}`);
+   recommended_list_grid_div.appendChild(profile_div);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -67,6 +70,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("ERROR, no root element found");
       return;
    }
-   console.log("adwawadaw");
    init();
 });

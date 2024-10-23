@@ -56,115 +56,116 @@
 </head>
 
 <body>
+
   <?php
+  /*
   $sql_connection = mysqli_connect("sql7.freesqldatabase.com", "sql7739764", "NVenaCkSgl", "sql7739764");
   if ($sql_connection->connect_error) {
     echo ("Error: Something went wrong: " . $sql_connection->connect_error);
     return;
   }
+  */
 
   ?>
-    <nav id="nav">
-      <div class="container">
-        <div class="cont">
-          <div class="in_cont" id="in_cont_nav">
-            <div class="nav_header">
-              <a href="./home.php" target="_blank" rel="noopener noreferrer">
-                <p>Il Sapore dell'Italia</p>
-              </a>
-              <a href="" onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
-                <p>/ home</p>
+  <nav id="nav">
+    <div class="container">
+      <div class="cont">
+        <div class="in_cont" id="in_cont_nav">
+          <div class="nav_header">
+            <a href="./home.php" target="_blank" rel="noopener noreferrer">
+              <p>Il Sapore dell'Italia</p>
+            </a>
+            <a href="" onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
+              <p>/ home</p>
+            </a>
+          </div>
+          <aside class="nav_aside">
+            <div class="nav_aside_item_pill">
+              <a href="./booking.php" target="_blank" rel="noopener noreferrer">
+                <p>book a table</p>
               </a>
             </div>
-            <aside class="nav_aside">
-              <div class="nav_aside_item_pill">
-                <a href="./booking.php" target="_blank" rel="noopener noreferrer">
-                  <p>book a table</p>
-                </a>
-              </div>
-            </aside>
-          </div>
+          </aside>
         </div>
       </div>
-    </nav>
-    <main class="page" id="root">
-      <div class="page_scroll">
-        <section class="category" id="category_intro">
-          <div class="container">
-            <div class="cont">
-              <div class="in_cont" id="in_cont_intro">
-                <header class="intro_title">
-                  <p>Il Sapore dell'Italia</p>
-                </header>
-                <div class="intro_bg">
-                  <img src="../assets/images/italian_cuisine_bg_4.jpg" alt="Il Sapore dell'Italia Bg">
+    </div>
+  </nav>
+  <main class="page" id="root">
+    <div class="page_scroll">
+      <section class="category" id="category_intro">
+        <div class="container">
+          <div class="cont">
+            <div class="in_cont" id="in_cont_intro">
+              <header class="intro_title">
+                <p>Il Sapore dell'Italia</p>
+              </header>
+              <div class="intro_bg">
+                <img src="../assets/images/italian_cuisine_bg_4.jpg" alt="Il Sapore dell'Italia Bg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category" id="category_short_about">
+        <div class="container">
+          <div class="cont">
+            <div class="in_cont" id="in_cont_short_about">
+              <header class="short_about_title">
+                <p>Il Sapore dell'Italia</p>
+              </header>
+              <article class="short_about_desc">
+                <div>
+                  <p>
+                    Discover a taste of Italy at Il Sapore dell’Italia,
+                    where authentic Italian cuisine meets modern culinary flair.
+                    Since our founding in 2010, we've been serving up fresh,
+                    flavorful dishes inspired by the rich traditions of Italy.
+                    From handcrafted pastas to wood-fired pizzas, every meal is
+                    prepared with the finest local ingredients and a passion for quality.
+                  </p>
+                  <p>
+                    Whether you're in the mood for classic Italian favorites
+                    or contemporary takes on traditional recipes, our restaurant
+                    offers a true Italian dining experience in an unforgettable setting.
+                  </p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
-        </section>
-        <section class="category" id="category_short_about">
-          <div class="container">
-            <div class="cont">
-              <div class="in_cont" id="in_cont_short_about">
-                <header class="short_about_title">
-                  <p>Il Sapore dell'Italia</p>
-                </header>
-                <article class="short_about_desc">
-                  <div>
-                    <p>
-                      Discover a taste of Italy at Il Sapore dell’Italia,
-                      where authentic Italian cuisine meets modern culinary flair.
-                      Since our founding in 2010, we've been serving up fresh,
-                      flavorful dishes inspired by the rich traditions of Italy.
-                      From handcrafted pastas to wood-fired pizzas, every meal is
-                      prepared with the finest local ingredients and a passion for quality.
-                    </p>
-                    <p>
-                      Whether you're in the mood for classic Italian favorites
-                      or contemporary takes on traditional recipes, our restaurant
-                      offers a true Italian dining experience in an unforgettable setting.
-                    </p>
-                  </div>
-                </article>
-              </div>
+        </div>
+      </section>
+      <section class="category" id="category_recommended_list">
+        <div class="container">
+          <div class="cont">
+            <div class="in_cont" id="in_cont_recommended_list">
+              <div class="recommended_list_grid"></div>
             </div>
           </div>
-        </section>
-        <section class="category" id="category_recommended_list">
-          <div class="container">
-            <div class="cont">
-              <div class="in_cont" id="in_cont_recommended_list">
-                <div class="recommended_list_grid">
-
-                </div>
-              </div>
-            </div>
+        </div>
+      </section>
+      <section class="category" id="category_long_about">
+        <div class="container">
+          <div class="cont">
+            <div class="in_cont" id="in_cont_long_about"></div>
           </div>
-        </section>
-        <section class="category" id="category_long_about">
-          <div class="container">
-            <div class="cont">
-              <div class="in_cont" id="in_cont_long_about"></div>
-            </div>
+        </div>
+      </section>
+      <section class="category" id="category_location_contact">
+        <div class="container">
+          <div class="cont">
+            <div class="in_cont" id="in_cont_location_contact"></div>
           </div>
-        </section>
-        <section class="category" id="category_location_contact">
-          <div class="container">
-            <div class="cont">
-              <div class="in_cont" id="in_cont_location_contact"></div>
-            </div>
+        </div>
+      </section>
+      <section class="category" id="category_footer">
+        <div class="container">
+          <div class="cont">
+            <div class="in_cont" id="in_cont_footer"></div>
           </div>
-        </section>
-        <section class="category" id="category_footer">
-          <div class="container">
-            <div class="cont">
-              <div class="in_cont" id="in_cont_footer"></div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
+  </main>
   </div>
   <div id="load" style="pointer-events: all">
     <div id="load_bg"></div>
