@@ -58,20 +58,8 @@
 
   <?php
 
-  require "../../lib/env_access.php";
-  loadEnv(__DIR__ . "/../../../.env");
-
-  $sql_connection = mysqli_connect(
-    getenv('DB_HOST'),
-    getenv('DB_USER'),
-    getenv('DB_PASS'),
-    getenv('DB_NAME')
-  );
-
-  if ($sql_connection->connect_error) {
-    echo ("Error: Something went wrong: " . $sql_connection->connect_error);
-    return;
-  }
+  require "../../lib/connection.php";
+  $sql_connection = get_sql_connection();
   ?>
 
   <nav id="category_nav">

@@ -1,7 +1,6 @@
 import { query, get_id, query_all } from "../../lib/utils";
 import { init_recommended_list } from "../../lib/recommended_list";
 import { gsap } from "gsap";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Observer } from "gsap/Observer";
 
