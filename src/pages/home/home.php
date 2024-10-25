@@ -51,10 +51,28 @@
   </script>
   <link rel="stylesheet" href="./home.css">
   <script defer type="module" src="../../../out/lib/shared.js"></script>
-  <script defer type="module" src="../../../out/pages/home/home.js"></script>
+  <!--<script defer type="module" src="../../../out/pages/home/home.js"></script>-->
 </head>
 
 <body>
+
+  <?php
+
+  require "../../lib/env_access.php";
+  loadEnv(__DIR__ . "/../../../.env");
+
+  $sql_connection = mysqli_connect(
+    getenv('DB_HOST'),
+    getenv('DB_USER'),
+    getenv('DB_PASS'),
+    getenv('DB_NAME')
+  );
+
+  if ($sql_connection->connect_error) {
+    echo ("Error: Something went wrong: " . $sql_connection->connect_error);
+    return;
+  }
+  ?>
 
   <nav id="category_nav">
     <div class="nav_container">
