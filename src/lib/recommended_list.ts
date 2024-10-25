@@ -45,11 +45,11 @@ function init() {
       test_recommened_list.push(food);
    }
    add_recommended_list(test_recommened_list);
-   console.log(test_recommened_list);
 }
 
 function add_recommended_list(list: Array<food_profile_minimal>) {
-   const recommended_list_grid_div: Element = query("#in_cont_recommended_list .recommended_list_grid");
+   const recommended_list_grid_div: Element = query(".recommended_list_grid");
+   console.log(recommended_list_grid_div);
    list.forEach((item_list: food_profile_minimal) => {
       create_food_profile_html(item_list, recommended_list_grid_div);
    });
@@ -59,7 +59,7 @@ function create_food_profile_html(items: food_profile_minimal, recommended_list_
    // profile grid
    let profile_div: Element = create("div");
    profile_div.setAttribute("class", "recommended_food_profile");
-   profile_div.setAttribute("id", `recommened_food_profile_${items.name}`);
+   //profile_div.setAttribute("id", `recommened_food_profile_${items.name}`);
    recommended_list_grid_div.appendChild(profile_div);
 }
 
