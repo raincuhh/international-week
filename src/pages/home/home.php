@@ -51,53 +51,80 @@
   </script>
   <link rel="stylesheet" href="./home.css">
   <script defer type="module" src="../../../out/lib/shared.js"></script>
-  <script defer type="module" src="../../../out/lib/recommended_list.js"></script>
+  <script defer type="module" src="../../../out/pages/home/home.js"></script>
 </head>
 
 <body>
 
-  <?php
-  /*
-  $sql_connection = mysqli_connect("sql7.freesqldatabase.com", "sql7739764", "NVenaCkSgl", "sql7739764");
-  if ($sql_connection->connect_error) {
-    echo ("Error: Something went wrong: " . $sql_connection->connect_error);
-    return;
-  }
-  */
-
-  ?>
-  <nav id="nav">
+  <nav id="category_nav">
     <div class="nav_container">
       <div class="nav_cont">
         <div class="nav_in_cont" id="in_cont_nav">
-          <div class="nav_header">
-            <a href="./home.php" target="_blank" rel="noopener noreferrer">
-              <p>Il Sapore dell'Italia</p>
-            </a>
-            <a href="" onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
-              <p>/ home</p>
-            </a>
-          </div>
-          <aside class="nav_aside">
-            <div class="nav_aside_item_pill">
-              <a href="../booking/booking.php" target="_blank" rel="noopener noreferrer">
-                <p>book a table</p>
+          <nav class="nav">
+            <div class="nav_header">
+              <a href="./home.php" target="_blank" rel="noopener noreferrer">
+                <p>Il Sapore dell'Italia</p>
+              </a>
+              <a onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
+                <p>/ home</p>
               </a>
             </div>
-          </aside>
+            <aside class="nav_aside">
+            </aside>
+          </nav>
         </div>
       </div>
     </div>
   </nav>
   <main class="page" id="root">
     <div class="page_scroll">
-      <section class="category" id="category_intro">
+      <section class="category" id="category_hero">
         <div class="container">
           <div class="cont">
-            <div class="in_cont" id="in_cont_intro">
-              <header class="intro_title">
-                <p>Il Sapore dell'Italia</p>
-              </header>
+            <div class="in_cont" id="in_cont_hero">
+              <section class="hero">
+                <div class="hero_two_sections">
+                  <div class="hero_fading_panel">
+                    <div class="top_fade"></div>
+                    <div class="bottom_fade"></div>
+                  </div>
+                  <div class="hero_title">
+                    <p>We are</p>
+                  </div>
+                  <div class="hero_title_list">
+                    <p class="h1">an italian restaurant.</p>
+                    <p class="h1">an inviting escape.</p>
+                    <p class="h1">passionate.</p>
+                    <p class="h1">a taste of italy.</p>
+                    <p class="h1">dedicated to quality.</p>
+                    <p class="h1">crafted with care.</p>
+                    <p class="h1">pure indulgence.</p>
+                    <p class="h1">a culinary journey.</p>
+                    <p class="h1">a taste of home.</p>
+                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                    <p class="h1">a place to gather.</p>
+                    <p class="h1">art in every meal.</p>
+                    <p class="h1">crafted for joy.</p>
+                    <p class="h1">for food lovers.</p>
+                    <p class="h1">authentic flavours.</p>
+                    <p class="h1">always welcoming.</p>
+                    <p class="h1">bringing italy to you.</p>
+                    <p class="h1">traditional.</p>
+                    <p class="h1">pure italian.</p>
+                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                    <p class="h1">your local gem.</p>
+                    <p class="h1">simple and fresh.</p>
+                    <p class="h1">a world of flavor.</p>
+                    <p class="h1">an inviting atmosphere.</p>
+                    <p class="h1">for every palate.</p>
+                    <p class="h1">exquisite pairings.</p>
+                    <p class="h1">flavorful experiences.</p>
+                    <p class="h1">made for sharing.</p>
+                    <p class="h1">celebrating every bite.</p>
+                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -106,6 +133,9 @@
         <div class="container">
           <div class="cont">
             <div class="in_cont" id="in_cont_short_about">
+              <section class="short_about">
+                short about placeholder
+              </section>
             </div>
           </div>
         </div>
@@ -114,7 +144,8 @@
         <div class="container">
           <div class="cont">
             <div class="in_cont" id="in_cont_recommended_list">
-              <div class="recommended_list_grid"></div>
+              <article class="recommended_list"></article>
+              recommended list placeholder
             </div>
           </div>
         </div>
@@ -122,21 +153,27 @@
       <section class="category" id="category_long_about">
         <div class="container">
           <div class="cont">
-            <div class="in_cont" id="in_cont_long_about"></div>
+            <div class="in_cont" id="in_cont_long_about">
+              <section class="long_about">long about placeholder</section>
+            </div>
           </div>
         </div>
       </section>
       <section class="category" id="category_location_contact">
         <div class="container">
           <div class="cont">
-            <div class="in_cont" id="in_cont_location_contact"></div>
+            <div class="in_cont" id="in_cont_location_contact">
+              <section class="location_contact">location contact placeholder</section>
+            </div>
           </div>
         </div>
       </section>
       <section class="category" id="category_footer">
         <div class="container">
           <div class="cont">
-            <div class="in_cont" id="in_cont_footer"></div>
+            <div class="in_cont" id="in_cont_footer">
+              <footer class="footer">footer placeholder</footer>
+            </div>
           </div>
         </div>
       </section>

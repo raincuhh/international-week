@@ -48,6 +48,9 @@
    --s-fs-xl: clamp(1.5rem, 3vw + 1rem, 2.5rem);
    --s-fs-xxl: clamp(2rem, 4vw + 1rem, 3rem);
 
+   /* for the hero title font size */
+   --s-fs-special-ms: clamp(0.95rem, 1.85vw + 1rem, 1.25rem);
+
    --s-loader-z-idx: 4000;
    --s-cursor-z-idx: 3000;
    --s-nav-z-idx: 2048;

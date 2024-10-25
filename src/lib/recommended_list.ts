@@ -36,9 +36,7 @@ let placeholder_recommended_food = {
    },
 };
 
-function init() {
-   //
-
+export function init_recommended_list() {
    // tests
    let test_recommened_list: Array<food_profile_minimal> = [];
    for (const food of Object.values(placeholder_recommended_food)) {
@@ -50,6 +48,7 @@ function init() {
 function add_recommended_list(list: Array<food_profile_minimal>) {
    const recommended_list_grid_div: Element = query(".recommended_list_grid");
    console.log(recommended_list_grid_div);
+
    list.forEach((item_list: food_profile_minimal) => {
       create_food_profile_html(item_list, recommended_list_grid_div);
    });
@@ -62,13 +61,3 @@ function create_food_profile_html(items: food_profile_minimal, recommended_list_
    //profile_div.setAttribute("id", `recommened_food_profile_${items.name}`);
    recommended_list_grid_div.appendChild(profile_div);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-   const root = get_id("root");
-
-   if (!root || !root.parentElement) {
-      console.log("ERROR, no root element found");
-      return;
-   }
-   init();
-});
