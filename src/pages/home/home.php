@@ -12,10 +12,10 @@
   <meta name="twitter:title" content="Il Sapore dell'Italia | Home">
   <meta name="twitter:description" content="Enjoy authentic Italian cuisine at Il Sapore dell'Italia.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../public/assets/icons/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../public/assets/icons/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../public/assets/icons/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="../../../public/assets/icons/favicon/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../public/assets/icons/favicon_new/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../public/assets/icons/favicon_new/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../public/assets/icons/favicon_new/favicon-16x16.png" />
+  <link rel="manifest" href="../../../public/assets/icons/favicon_new/site.webmanifest" />
   <link rel="preload" href="../../../public/themes/fonts.css" as="style">
   <link rel="preload" href="../../../public/themes/variables.css" as="style">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -70,11 +70,14 @@
               <a href="./home.php" target="_blank" rel="noopener noreferrer">
                 <p>Il Sapore dell'Italia</p>
               </a>
-              <a onclick="window.location.reload()" target="_blank" rel="noopener noreferrer">
+              <a onclick="window.scrollTo(0,0)" target="_blank" rel="noopener noreferrer">
                 <p>/ home</p>
               </a>
             </div>
             <aside class="nav_aside">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                login
+              </a>
             </aside>
           </nav>
         </div>
@@ -88,52 +91,51 @@
           <div class="cont">
             <div class="in_cont" id="in_cont_hero">
               <section class="hero">
-                <div class="hero_two_sections">
+                <div class="hero_container">
                   <div class="hero_title">
+                    <p>/</p>
                     <p>We are</p>
-                    <p><i class='bx bx-chevron-up'></i></p>
-                    <p><i class='bx bx-chevron-up'></i></p>
-                    <p><i class='bx bx-chevron-up'></i></p>
-                    <p><i class='bx bx-chevron-up'></i></p>
-                    <p><i class='bx bx-chevron-up'></i></p>
-                    <p><i class='bx bx-chevron-up'></i></p>
-                    <p><i class='bx bx-down-arrow-alt'></i></p>
                   </div>
                   <div class="hero_title_list">
-                    <p class="h1">an italian restaurant.</p>
-                    <p class="h1">an inviting escape.</p>
-                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
-                    <p class="h1">passionate.</p>
-                    <p class="h1">a taste of italy.</p>
-                    <p class="h1">dedicated to quality.</p>
-                    <p class="h1">crafted with care.</p>
-                    <p class="h1">pure indulgence.</p>
-                    <p class="h1">a culinary journey.</p>
-                    <p class="h1">a taste of home.</p>
-                    <p class="h1">a place to gather.</p>
-                    <p class="h1">art in every meal.</p>
-                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
-                    <p class="h1">crafted for joy.</p>
-                    <p class="h1">for food lovers.</p>
-                    <p class="h1">authentic flavours.</p>
-                    <p class="h1">always welcoming.</p>
-                    <p class="h1">bringing italy to you.</p>
-                    <p class="h1">traditional.</p>
-                    <p class="h1">pure italian.</p>
-                    <p class="h1">your local gem.</p>
-                    <p class="h1">simple and fresh.</p>
-                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
-                    <p class="h1">a world of flavor.</p>
-                    <p class="h1">an inviting atmosphere.</p>
-                    <p class="h1">for every palate.</p>
-                    <p class="h1">exquisite pairings.</p>
-                    <p class="h1">flavorful experiences.</p>
-                    <p class="h1">made for sharing.</p>
-                    <p class="h1">celebrating every bite.</p>
+                    <div class="hero_title_list_inner">
+                      <p class="h1">an italian restaurant.</p>
+                      <p class="h1">an inviting escape.</p>
+                      <p class="h1">passionate.</p>
+                      <p class="h1">a taste of italy.</p>
+                      <p class="h1">dedicated to quality.</p>
+                      <p class="h1">crafted with care.</p>
+                      <p class="h1">pure indulgence.</p>
+                      <p class="h1">a culinary journey.</p>
+                      <p class="h1">a taste of home.</p>
+                      <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                      <p class="h1">a place to gather.</p>
+                      <p class="h1">art in every meal.</p>
+                      <p class="h1">crafted for joy.</p>
+                      <p class="h1">for food lovers.</p>
+                      <p class="h1">authentic flavours.</p>
+                      <p class="h1">always welcoming.</p>
+                      <p class="h1">bringing italy to you.</p>
+                      <p class="h1">traditional.</p>
+                      <p class="h1">pure italian.</p>
+                      <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                      <p class="h1">your local gem.</p>
+                      <p class="h1">simple and fresh.</p>
+                      <p class="h1">a world of flavor.</p>
+                      <p class="h1">an inviting atmosphere.</p>
+                      <p class="h1">for every palate.</p>
+                      <p class="h1">exquisite pairings.</p>
+                      <p class="h1">flavorful experiences.</p>
+                      <p class="h1">made for sharing.</p>
+                      <p class="h1">celebrating every bite.</p>
+                      <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                    </div>
                   </div>
                   <div class="hero_fading_panel">
                     <div class="top_fade"></div>
                     <div class="bottom_fade"></div>
+                  </div>
+                  <div class="hero_arrow_tip">
+                  <i class="bx bx-down-arrow-alt"></i>
                   </div>
                 </div>
               </section>
@@ -146,7 +148,14 @@
           <div class="cont">
             <div class="in_cont" id="in_cont_short_about">
               <section class="short_about">
-                short about placeholder
+                <p>
+                  Welcome to Il Sapore dell'Italia,
+                  where every meal is a celebration of authentic
+                  Italian flavors crafted with passion.
+                  Join us as we take you on a culinary journey
+                  filled with tradition, inviting you to savor the
+                  essence of Italy in each dish.
+                </p>
               </section>
             </div>
           </div>
@@ -197,11 +206,9 @@
     <div id="load_t"></div>
   </div>
   <noscript>
-    "
     <div id="n_script_c">
       <div id="n_script_h">Please enable JavaScript to view this website.</div>
     </div>
-    "
   </noscript>
   <script nomodule>
     let d = document,

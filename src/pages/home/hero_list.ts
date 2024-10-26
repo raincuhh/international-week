@@ -8,16 +8,16 @@ gsap.registerPlugin(ScrollTrigger, Observer);
 const gap_val: string = get_root_variable_val("--s-marg-em-s");
 const resolved_gap_height: number = get_resolved_gap_height_val(gap_val) || 0;
 
-export function hero_list_scroll() {
+export function hero_list_scroll(): void {
    const hero_title_list: HTMLElement = query(".hero_title_list");
-   duplicate_list_elements(hero_title_list);
+   //duplicate_list_elements(hero_title_list);
 
    const texts: Array<HTMLElement> = gsap.utils.toArray(".hero_title_list .h1");
    const hero_tl: GSAPTimeline = gsap.timeline({
       repeat: -1,
       paused: false,
    });
-   animate_section_lines(hero_tl, hero_title_list, hero_title_list.clientHeight, texts);
+   //animate_section_lines(hero_tl, hero_title_list, hero_title_list.clientHeight, texts);
 }
 
 function animate_section_lines(
@@ -25,7 +25,7 @@ function animate_section_lines(
    container: HTMLElement,
    container_height: number,
    texts: Array<HTMLElement>
-) {
+): void {
    texts.forEach((text: HTMLElement, _i: number) => {
       const line_height: number = text.clientHeight + resolved_gap_height;
    });
@@ -38,7 +38,18 @@ function get_resolved_gap_height_val(gap_val: string): number {
    return 0;
 }
 
-function duplicate_list_elements(container: HTMLElement) {
+function resolve_1em_and_expression_height(expression: number): number {
+   const temp: HTMLElement = create("div");
+   document.body.appendChild(temp);
+   temp.style.fontSize = "1em";
+   const one_em_px: number = parseFloat(getComputedStyle(temp).fontSize);
+   document.body.removeChild(temp);
+
+   const factor = expression;
+   return one_em_px * factor;
+}
+
+function duplicate_list_elements(container: HTMLElement): void {
    const original_elements: Element[] = Array.from(container.children);
    original_elements.forEach((item) => {
       const clone: HTMLElement = item.cloneNode(true) as HTMLElement;
@@ -94,14 +105,3 @@ function animate_section_lines(
 
 function handle_line_changes(line: Element, sections: Array<Array<HTMLElement>>) {}
 */
-
-function resolve_1em_and_expression_height(expression: number): number {
-   const temp: HTMLElement = create("div");
-   document.body.appendChild(temp);
-   temp.style.fontSize = "1em";
-   const one_em_px = parseFloat(getComputedStyle(temp).fontSize);
-   document.body.removeChild(temp);
-
-   const factor = expression;
-   return one_em_px * factor;
-}

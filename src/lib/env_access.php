@@ -1,5 +1,5 @@
 <?php
-function loadEnv($file)
+function loadEnv($file): void
 {
   if (file_exists($file)) {
     $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);

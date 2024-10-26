@@ -12,12 +12,15 @@
 }
 
 :root {
-   --s-primary-color: rgb(0, 0, 0);
-   --s-primary-color-hover: rgb(53, 53, 53);
-   --s-secondary-color: rgb(153, 153, 153);
-   --s-tertiary-color: rgb(255, 255, 255);
-
-   --s-loader-progress-bar-bg-color: rgb(10, 10, 10);
+   --s-bg: rgba(28, 33, 38, 1);
+   --s-white: rgba(255, 255, 255, 1);
+   --s-light: rgba(239, 232, 227, 1);
+   --s-dark: rgba(23, 27, 31, 1);
+   --s-black: rgba(0, 0, 0, 1);
+   --s-main: rgba(221, 147, 102, 1);
+   --s-secondary: rgba(240, 232, 227, 1);
+   --s-secondary-alt: rgba(229, 222, 217, 1);
+   --s-tertiary: rgba(237, 225, 218, 1);
 
    --s-transition-hover-base: all ease-in-out 100ms;
 
@@ -40,7 +43,7 @@
    --s-marg-em-xl: calc((1em * 1.618) * 1.618);
    --s-marg-em-xxl: calc(((1em * 1.618) * 1.618) * 1.618);
 
-   --s-fs-xxs: clamp(0.7rem, 1.25vw - 0.5rem, 0.875rem);
+   --s-fs-xxs: clamp(0.7rem, 1.25vw + 0.5rem, 0.875rem);
    --s-fs-xs: clamp(0.75rem, 1.5vw + 0.5rem, 1rem);
    --s-fs-s: clamp(0.875rem, 1.75vw + 0.5rem, 1.125rem);
    --s-fs-m: clamp(1rem, 2vw + 1rem, 1.5rem);

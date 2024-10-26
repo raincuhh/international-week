@@ -15,7 +15,7 @@ interface food_profile {
 }
 
 // remove this when gotten from local db
-let placeholder_recommended_food = {
+let test_food_list = {
    food1: {
       name: "food1",
       price: 1234,
@@ -39,7 +39,7 @@ let placeholder_recommended_food = {
 export function init_recommended_list() {
    // tests
    let test_recommened_list: Array<food_profile_minimal> = [];
-   for (const food of Object.values(placeholder_recommended_food)) {
+   for (const food of Object.values(test_food_list)) {
       test_recommened_list.push(food);
    }
    add_recommended_list(test_recommened_list);
