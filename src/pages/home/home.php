@@ -18,6 +18,7 @@
   <link rel="manifest" href="../../../public/assets/icons/favicon/site.webmanifest" />
   <link rel="preload" href="../../../public/themes/fonts.css" as="style">
   <link rel="preload" href="../../../public/themes/variables.css" as="style">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <title>Il Sapore dell'Italia | Home</title>
   <script defer>
     let date_now = new Date();
@@ -50,14 +51,12 @@
     console.log("Date now: " + formatted);
   </script>
   <link rel="stylesheet" href="./home.css">
-  <script defer type="module" src="../../../out/lib/shared.js"></script>
-  <!--<script defer type="module" src="../../../out/pages/home/home.js"></script>-->
+  <script defer src="../../../out/home.bundle.js"></script>
 </head>
 
 <body>
 
   <?php
-
   require "../../lib/connection.php";
   $sql_connection = get_sql_connection();
   ?>
@@ -90,16 +89,20 @@
             <div class="in_cont" id="in_cont_hero">
               <section class="hero">
                 <div class="hero_two_sections">
-                  <div class="hero_fading_panel">
-                    <div class="top_fade"></div>
-                    <div class="bottom_fade"></div>
-                  </div>
                   <div class="hero_title">
                     <p>We are</p>
+                    <p><i class='bx bx-chevron-up'></i></p>
+                    <p><i class='bx bx-chevron-up'></i></p>
+                    <p><i class='bx bx-chevron-up'></i></p>
+                    <p><i class='bx bx-chevron-up'></i></p>
+                    <p><i class='bx bx-chevron-up'></i></p>
+                    <p><i class='bx bx-chevron-up'></i></p>
+                    <p><i class='bx bx-down-arrow-alt'></i></p>
                   </div>
                   <div class="hero_title_list">
                     <p class="h1">an italian restaurant.</p>
                     <p class="h1">an inviting escape.</p>
+                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
                     <p class="h1">passionate.</p>
                     <p class="h1">a taste of italy.</p>
                     <p class="h1">dedicated to quality.</p>
@@ -107,9 +110,9 @@
                     <p class="h1">pure indulgence.</p>
                     <p class="h1">a culinary journey.</p>
                     <p class="h1">a taste of home.</p>
-                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
                     <p class="h1">a place to gather.</p>
                     <p class="h1">art in every meal.</p>
+                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
                     <p class="h1">crafted for joy.</p>
                     <p class="h1">for food lovers.</p>
                     <p class="h1">authentic flavours.</p>
@@ -117,9 +120,9 @@
                     <p class="h1">bringing italy to you.</p>
                     <p class="h1">traditional.</p>
                     <p class="h1">pure italian.</p>
-                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
                     <p class="h1">your local gem.</p>
                     <p class="h1">simple and fresh.</p>
+                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
                     <p class="h1">a world of flavor.</p>
                     <p class="h1">an inviting atmosphere.</p>
                     <p class="h1">for every palate.</p>
@@ -127,7 +130,10 @@
                     <p class="h1">flavorful experiences.</p>
                     <p class="h1">made for sharing.</p>
                     <p class="h1">celebrating every bite.</p>
-                    <p class="h1"><span>il Sapore dell'Italia.</span></p>
+                  </div>
+                  <div class="hero_fading_panel">
+                    <div class="top_fade"></div>
+                    <div class="bottom_fade"></div>
                   </div>
                 </div>
               </section>

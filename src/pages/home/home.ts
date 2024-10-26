@@ -1,22 +1,14 @@
-import { query, get_id, query_all } from "../../lib/utils";
+import { query, get_id, query_all, verify_page_root } from "../../lib/utils";
 import { init_recommended_list } from "../../lib/recommended_list";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Observer } from "gsap/Observer";
-
-gsap.registerPlugin(ScrollTrigger, Observer);
-
-function start_hero_title_scroll() {}
+import { hero_list_scroll } from "./hero_list";
 
 function init() {
-   start_hero_title_scroll();
+   hero_list_scroll();
 }
 
+// TODO: add the hero list scroll actually, and make it work
 document.addEventListener("DOMContentLoaded", () => {
-   const root = get_id("root");
-
-   if (!root || !root.parentElement) {
-      console.log("ERROR, no root element found");
+   if (!verify_page_root()) {
       return;
    }
    init();

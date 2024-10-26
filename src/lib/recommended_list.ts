@@ -56,7 +56,7 @@ function add_recommended_list(list: Array<food_profile_minimal>) {
 
 function create_food_profile_html(items: food_profile_minimal, recommended_list_grid_div: Element) {
    // profile grid
-   let profile_div: Element = create("div");
+   let profile_div: HTMLElement = create("div");
    profile_div.setAttribute("class", "recommended_food_profile");
    //profile_div.setAttribute("id", `recommened_food_profile_${items.name}`);
    recommended_list_grid_div.appendChild(profile_div);

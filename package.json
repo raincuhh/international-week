@@ -1,19 +1,26 @@
 {
-	"name": "international-week",
-	"version": "1.0.0",
-	"description": "placeholder",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"tsc": "tsc"
-	},
-	"author": "filip ryan aaron hunslund",
-	"license": "MIT",
-	"devDependencies": {
-		"typescript": "^5.6.3"
-	},
-	"dependencies": {
-		"dotenv": "^16.4.5",
-		"gsap": "^3.12.5"
-	}
+   "name": "international-week",
+   "version": "1.0.0",
+   "description": "placeholder",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "tsc": "npx tsc --watch",
+      "build": "webpack --mode development --watch"
+   },
+   "author": "Filip Ryan Aaron Hunslund",
+   "license": "MIT",
+   "devDependencies": {
+      "@babel/core": "^7.25.9",
+      "@babel/preset-env": "^7.25.9",
+      "babel-loader": "^9.2.1",
+      "ts-loader": "^9.5.1",
+      "typescript": "^5.6.3",
+      "webpack": "^5.95.0",
+      "webpack-cli": "^5.1.4"
+   },
+   "dependencies": {
+      "dotenv": "^16.4.5",
+      "gsap": "^3.12.5"
+   }
 }

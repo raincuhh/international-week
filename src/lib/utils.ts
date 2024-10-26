@@ -16,16 +16,16 @@ export function create_uuid(): string {
    }
    return result;
 }
-export function create(str: string): Element {
+export function create(str: string): HTMLElement {
    return document.createElement(str);
 }
-export function get_id(str: string): Element | null {
+export function get_id(str: string): HTMLElement | null {
    return document.getElementById(str);
 }
-export function query(str: string): Element | null {
+export function query(str: string): HTMLElement | null {
    return document.querySelector(str);
 }
-export function query_all(str: string): NodeListOf<Element> {
+export function query_all(str: string): NodeListOf<HTMLElement> {
    return document.querySelectorAll(str);
 }
 export function set_doc_title(str: string): void {
@@ -45,4 +45,16 @@ export function uppercaseify_str(str: string) {
    });
 
    return parts.join(" ");
+}
+export function verify_page_root(): boolean {
+   const root = get_id("root");
+
+   if (!root || !root.parentElement) {
+      console.log("ERROR, no root element found");
+      return false;
+   }
+   return true;
+}
+export function get_root_variable_val(variable: string): string {
+   return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
 }

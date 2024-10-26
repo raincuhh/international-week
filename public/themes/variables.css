@@ -48,8 +48,10 @@
    --s-fs-xl: clamp(1.5rem, 3vw + 1rem, 2.5rem);
    --s-fs-xxl: clamp(2rem, 4vw + 1rem, 3rem);
 
-   /* for the hero title font size */
+   /* for special fs elements */
    --s-fs-special-ms: clamp(0.95rem, 1.85vw + 1rem, 1.25rem);
+   --s-fs-hero-s: clamp(0.96rem, 1.46vw + 1rem, 1.5rem);
+   --s-fs-hero-m: clamp(1.5rem, 3vw + 1rem, 1.75rem);
 
    --s-loader-z-idx: 4000;
    --s-cursor-z-idx: 3000;
@@ -61,4 +63,33 @@
    --s-raleway-ff: "Raleway", sans-serif;
    --s-inter-ff: "Inter", sans-serif;
    --s-playfair-ff: "Playfair Display", serif;
+}
+
+body {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1rem;
+   overflow-x: hidden;
+}
+
+article,
+aside,
+details,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+   display: block;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+a {
+   text-decoration: none;
 }
