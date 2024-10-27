@@ -339,26 +339,93 @@
 
 .recommended_list_grid {
    display: flex;
-   gap: var(--s-marg-em-s);
+   flex-wrap: wrap;
 }
 
 .recommended_food_profile {
    flex: 1;
-   width: 30%;
+   width: 100%;
    height: min-content;
-   border: 1px solid var(--s-dark);
+   border: 1px solid var(--s-secondary-low-opacity);
    padding: var(--s-marg-em-xs);
 }
 
-@media (max-width: 557px) {
+@media (min-width: 768px) {
+   .recommended_food_profile {
+      flex: 1 1 calc(33.33% - var(--s-marg-em-xs));
+   }
+}
+
+@media (max-width: 767px) and (min-width: 567px) {
+   .recommended_food_profile {
+      flex: 1 1 calc(50% - var(--s-marg-em-xs));
+   }
+}
+
+@media (max-width: 566px) {
    .recommended_list_grid {
       display: block;
    }
    .recommended_food_profile {
       width: 100%;
    }
-
    .recommended_food_profile:not(.recommended_food_profile:last-child) {
-      margin-bottom: var(--s-marg-em-xs);
+      margin-bottom: var(--s-marg-em-m);
    }
+}
+
+.food_profile_container {
+   display: flex;
+   flex-direction: column;
+}
+
+.food_profile_image_container {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.food_profile_image_container img {
+   width: 100%;
+}
+
+.food_profile_image_container img:first-child {
+   position: absolute;
+   opacity: 0;
+}
+
+.food_profile_info_container {
+   display: flex;
+   flex-direction: column;
+}
+
+.food_profile_info_top,
+.food_profile_info_bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
+.food_profile_info_top {
+   margin-top: var(--s-marg-em-xs);
+}
+
+.food_profile_info_top p,
+.food_profile_info_top a {
+   color: var(--s-secondary);
+}
+
+.food_profile_info_bottom {
+   margin-top: var(--s-marg-em-xl);
+}
+
+.food_profile_info_bottom p,
+.food_profile_info_bottom a,
+.food_profile_info_bottom .food_profile_info_booking_link i {
+   color: var(--s-secondary-low-opacity);
+}
+
+.food_profile_info_bottom .food_profile_info_booking_link {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }

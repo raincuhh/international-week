@@ -47,7 +47,7 @@
               <div class="bottom_fade"></div>
             </div>
             <div class="hero_arrow_tip">
-              <i class="bx bx-down-arrow-alt"></i>
+              <i class="bx bx-down-arrow-alt bx-fade-down"></i>
             </div>
           </div>
         </section>

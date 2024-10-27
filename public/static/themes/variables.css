@@ -19,13 +19,14 @@
    --s-black: rgba(0, 0, 0, 1);
    --s-main: rgba(221, 147, 102, 1);
    --s-secondary: rgba(240, 232, 227, 1);
+   --s-secondary-low-opacity: rgba(240, 232, 227, 0.1);
    --s-secondary-alt: rgba(229, 222, 217, 1);
    --s-tertiary: rgba(237, 225, 218, 1);
 
    --s-transition-hover-base: all ease-in-out 100ms;
 
    --s-loader-max-width: clamp(64rem, 84vw, 104rem);
-   --s-max-width: clamp(64rem, 53vw, 84rem);
+   --s-max-width: clamp(70rem, 53vw, 84rem);
    --s-page-side-padding: clamp(1rem, 3vw, 3rem);
 
    --xs-width: 320px;
