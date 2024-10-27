@@ -213,4 +213,16 @@ function create_food_profile_html(profile: food_profile, recommended_list_grid_d
    let info_booking_link_icon_div: HTMLElement = create("i");
    info_booking_link_icon_div.setAttribute("class", "bx bx-right-arrow-alt");
    info_booking_link_div?.appendChild(info_booking_link_icon_div);
+
+   parent_div.addEventListener("mouseover", () => {
+      gsap.to(info_booking_link_icon_div, {
+         rotate: "-45deg",
+      });
+   });
+
+   parent_div.addEventListener("mouseleave", () => {
+      gsap.to(info_booking_link_icon_div, {
+         rotate: "0deg",
+      });
+   });
 }
