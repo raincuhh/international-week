@@ -1,7 +1,7 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 header('Content-Type: application/json');
-require_once "../connection.php";
+require_once "../utils.php";
 
 $sql_connection = get_sql_connection();
 

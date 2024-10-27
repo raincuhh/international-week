@@ -1,76 +1,27 @@
+<?php
+require "../../src/lib/utils.php";
+$sql_connection = get_sql_connection();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Il Sapore dell'Italia | home" />
-  <meta property="og:title" content="Il Sapore dell'Italia | Home">
-  <meta property="og:description" content="Welcome to Il Sapore dell'Italia, the best Italian restaurant in town.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Il Sapore dell'Italia | Home">
-  <meta name="twitter:description" content="Enjoy authentic Italian cuisine at Il Sapore dell'Italia.">
-
-  <!-- preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-   <!-- icons and favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../public/assets/icons/favicon_new/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../public/assets/icons/favicon_new/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../public/assets/icons/favicon_new/favicon-16x16.png" />
-  <link rel="manifest" href="../../../public/assets/icons/favicon_new/site.webmanifest" />
-
-  <!-- preload css -->
-  <link rel="preload" href="../../../public/themes/fonts.css" as="style">
-  <link rel="preload" href="../../../public/themes/variables.css" as="style">
-  <link rel="preload" href="../../../public/themes/fonts.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="../../../public/themes/fonts.css"></noscript>
-  <link rel="preload" href="../../../public/themes/variables.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="../../../public/themes/variables.css"></noscript>
-
-  <!-- async preload boxicons -->
-  <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"></noscript>
+  <?php
+  include "./include/metadata.php";
+  include "../shared/include/preconnect_fonts.php";
+  include "../shared/include/favicons.php";
+  include "../shared/include/preload.php";
+  ?>
 
   <title>Il Sapore dell'Italia | Home</title>
 
-  <script defer>
-    function get_formatted_time() {
-      let date_now = new Date();
-      let week_day_unfm = date_now.getDay();
-      let week_day_fm = (number) => {
-          switch (number) {
-            case 1:   return "Mon";
-            case 2:   return "Tue";
-            case 3:   return "Wed";
-            case 4:   return "Thu";
-            case 5:   return "Fri";
-            case 6:   return "Sat";
-            case 0:   return "Sun";
-            default:  return "Unknown";
-            }
-          };
-      let date = date_now.getDate();
-      let month = date_now.getMonth() + 1;
-      let year = date_now.getFullYear();
-
-      return week_day_fm(week_day_unfm) + " " + date + " " + month + " " + year;
-    }
-    console.log("Date now: " + get_formatted_time());
-  </script>
   <link rel="stylesheet" href="./home.css">
-  <script defer src="../../../out/home.bundle.js"></script>
+  <script defer src="../../out/pages/home/home.bundle.js"></script>
 </head>
 
 <body>
-
-  <?php
-  require "../../lib/connection.php";
-  $sql_connection = get_sql_connection();
-  ?>
-
   <nav id="category_nav">
     <div class="nav_container">
       <div class="nav_cont">
@@ -145,7 +96,7 @@
                     <div class="bottom_fade"></div>
                   </div>
                   <div class="hero_arrow_tip">
-                  <i class="bx bx-down-arrow-alt"></i>
+                    <i class="bx bx-down-arrow-alt"></i>
                   </div>
                 </div>
               </section>
