@@ -8,7 +8,7 @@ This is a full-stack restaurant website created for a school project, focusing o
 
 1. **Node.js**: Ensure you have Node.js installed. [Download here](https://nodejs.org/).
 2. **WAMP**: This project runs locally on WAMP for the backend server.
-3. **Environment Variables**: Create a `.env` file to store any sensitive information.
+3. **Environment Variables**: Create a `.env` ask @raincuhh for the .env if you are part of the project.
 
 ### Setup
 
