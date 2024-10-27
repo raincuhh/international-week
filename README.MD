@@ -61,11 +61,11 @@ Make sure your application correctly utilizes `window.location.origin` for fetch
 
 Ensure to keep the folder structure compatible with different setups, as hardcoding paths can lead to issues when collaborating.
 
-### Author
+### Author(s)
 
-Filip Ryan Aaron Hunslund
+Filip Ryan
+Aaron Hunslund
+
+### License
+
 License: MIT
-
----
-
-Feel free to modify any sections as needed!
