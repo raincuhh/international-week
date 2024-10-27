@@ -261,7 +261,7 @@
 #in_cont_short_about {
    display: flex;
    flex-direction: column;
-   margin-top: var(--s-marg-em-xs);
+   margin-top: var(--s-marg-em-xl);
 }
 
 .short_about .short_about_paragraph > p {
@@ -335,4 +335,30 @@
 
 .recommended_list {
    margin-top: calc(var(--s-marg-em-xxl) * 2);
+}
+
+.recommended_list_grid {
+   display: flex;
+   gap: var(--s-marg-em-s);
+}
+
+.recommended_food_profile {
+   flex: 1;
+   width: 30%;
+   height: min-content;
+   border: 1px solid var(--s-dark);
+   padding: var(--s-marg-em-xs);
+}
+
+@media (max-width: 557px) {
+   .recommended_list_grid {
+      display: block;
+   }
+   .recommended_food_profile {
+      width: 100%;
+   }
+
+   .recommended_food_profile:not(.recommended_food_profile:last-child) {
+      margin-bottom: var(--s-marg-em-xs);
+   }
 }

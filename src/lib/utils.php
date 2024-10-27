@@ -15,7 +15,7 @@ function load_env($file): void
 
 function get_sql_connection(): bool | mysqli
 {
-  load_env(__DIR__ . "/../../.env");
+  load_env(__DIR__ . "/../../.env.development.local");
 
   $sql_connection = mysqli_connect(
     getenv('DB_HOST'),

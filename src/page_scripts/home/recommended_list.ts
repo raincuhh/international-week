@@ -73,9 +73,13 @@ function add_recommended_list(list: Array<food_profile>) {
 }
 
 function create_food_profile_html(items: food_profile, recommended_list_grid_div: HTMLElement) {
-   // profile grid
-   let profile_div: HTMLElement = create("div");
-   profile_div.setAttribute("class", "recommended_food_profile");
-   profile_div.setAttribute("id", `recommened_food_profile_${items.name || "unknown_name"}`);
-   recommended_list_grid_div.appendChild(profile_div);
+   let parent_div: HTMLElement = create("div");
+   parent_div.setAttribute("class", "recommended_food_profile");
+   parent_div.setAttribute("id", `recommened_food_profile_${items.name || "unknown_name"}`);
+   recommended_list_grid_div?.appendChild(parent_div);
+
+   let container_div: HTMLElement = create("div");
+   container_div.setAttribute("class", "food_profile_container");
+   container_div.textContent = "sigma";
+   parent_div?.appendChild(container_div);
 }
