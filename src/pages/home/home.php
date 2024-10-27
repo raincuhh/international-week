@@ -21,34 +21,36 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <title>Il Sapore dell'Italia | Home</title>
   <script defer>
-    let date_now = new Date();
-    let week_day_unfm = date_now.getDay();
-    let week_day_fm = (number) => {
-      switch (number) {
-        case 1:
-          return "Mon";
-        case 2:
-          return "Tue";
-        case 3:
-          return "Wed";
-        case 4:
-          return "Thu";
-        case 5:
-          return "Fri";
-        case 6:
-          return "Sat";
-        case 7:
-          return "Sun";
-        default:
-          return "Unknown";
-      }
-    };
-    let date = date_now.getDate();
-    let month = date_now.getMonth();
-    let year = date_now.getFullYear();
+    function get_formatted_time() {
+      let date_now = new Date();
+      let week_day_unfm = date_now.getDay();
+      let week_day_fm = (number) => {
+          switch (number) {
+            case 1:
+              return "Mon";
+            case 2:
+              return "Tue";
+            case 3:
+              return "Wed";
+            case 4:
+              return "Thu";
+            case 5:
+              return "Fri";
+            case 6:
+              return "Sat";
+            case 7:
+              return "Sun";
+            default:
+              return "Unknown";
+            }
+          };
+      let date = date_now.getDate();
+      let month = date_now.getMonth();
+      let year = date_now.getFullYear();
 
-    const formatted = week_day_fm(week_day_unfm) + " " + date + " " + month + " " + year;
-    console.log("Date now: " + formatted);
+      return week_day_fm(week_day_unfm) + " " + date + " " + month + " " + year;
+    }
+    console.log("Date now: " + get_formatted_time());
   </script>
   <link rel="stylesheet" href="./home.css">
   <script defer src="../../../out/home.bundle.js"></script>
@@ -167,6 +169,8 @@
             <div class="in_cont" id="in_cont_recommended_list">
               <article class="recommended_list"></article>
               recommended list placeholder
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id maiores optio, ratione dolor blanditiis magnam reprehenderit ex nihil! Non, qui quisquam tenetur eius aspernatur laborum deserunt accusamus ducimus voluptatibus! Fugit, impedit? Est corrupti labore rem doloremque modi minima! Cumque minus quae dolorem excepturi fugit magnam expedita nobis quos mollitia?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea ipsam ipsa corrupti quia vel cum aut voluptates nam et error dolor nulla adipisci est id, maxime consectetur, molestias voluptatem quam delectus tempore. Aperiam minima architecto iste quo amet optio nesciunt odit praesentium, esse deleniti saepe ducimus enim recusandae officiis?
             </div>
           </div>
         </div>

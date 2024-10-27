@@ -1,18 +1,14 @@
 import { get_root_variable_val, create, query } from "../../lib/utils";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Observer } from "gsap/Observer";
-
-gsap.registerPlugin(ScrollTrigger, Observer);
 
 const gap_val: string = get_root_variable_val("--s-marg-em-s");
 const resolved_gap_height: number = get_resolved_gap_height_val(gap_val) || 0;
 
 export function hero_list_scroll(): void {
-   const hero_title_list: HTMLElement = query(".hero_title_list");
+   const hero_title_list: HTMLElement = query(".hero_title_list .hero_title_list_inner");
    //duplicate_list_elements(hero_title_list);
 
-   const texts: Array<HTMLElement> = gsap.utils.toArray(".hero_title_list .h1");
+   const texts: Array<HTMLElement> = gsap.utils.toArray(".hero_title_list .hero_title_list_inner .h1");
    const hero_tl: GSAPTimeline = gsap.timeline({
       repeat: -1,
       paused: false,
