@@ -169,8 +169,6 @@
             <div class="in_cont" id="in_cont_recommended_list">
               <article class="recommended_list"></article>
               recommended list placeholder
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id maiores optio, ratione dolor blanditiis magnam reprehenderit ex nihil! Non, qui quisquam tenetur eius aspernatur laborum deserunt accusamus ducimus voluptatibus! Fugit, impedit? Est corrupti labore rem doloremque modi minima! Cumque minus quae dolorem excepturi fugit magnam expedita nobis quos mollitia?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea ipsam ipsa corrupti quia vel cum aut voluptates nam et error dolor nulla adipisci est id, maxime consectetur, molestias voluptatem quam delectus tempore. Aperiam minima architecto iste quo amet optio nesciunt odit praesentium, esse deleniti saepe ducimus enim recusandae officiis?
             </div>
           </div>
         </div>

@@ -1,3 +1,16 @@
+import axios from "axios";
+
+const base_url: string = window.location.origin;
+
+export async function fetch_data(query: string) {
+   try {
+      const response = await axios.get(`${base_url}/international-week/src/lib/test/test_data_fetch.php`);
+      console.log(response.data);
+   } catch (error) {
+      console.error("Error fetching data:", error);
+   }
+}
+
 export function create_uuid(): string {
    let pattern: string = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";
    let result: string = "";
