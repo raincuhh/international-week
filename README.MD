@@ -53,14 +53,6 @@ This is a full-stack restaurant website created for a school project, focusing o
       npm run build --mode production
       ```
 
-### Fetch Requests
-
-Make sure your application correctly utilizes `window.location.origin` for fetch requests, which is why cloning into the `www/` folder is crucial for local development.
-
-### Folder Structure
-
-Ensure to keep the folder structure compatible with different setups, as hardcoding paths can lead to issues when collaborating.
-
 ### Author(s)
 
 Filip Ryan
