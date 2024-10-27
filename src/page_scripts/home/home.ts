@@ -1,5 +1,5 @@
 import { query, verify_page_root } from "../../lib/utils";
-//import { init_recommended_list } from "../../lib/recommended_list";
+import { create_recommended_list } from "./recommended_list";
 import { hero_list_scroll } from "./hero_list";
 import { test_fetch_data } from "../../lib/test/test_data_fetch";
 import { gsap } from "gsap";
@@ -74,14 +74,14 @@ function animate_short_about_thumbnail(): void {
          scrollTrigger: {
             trigger: paragraph_div,
             start: "top+=80% top",
-            end: "+=50%",
+            end: "+=90%",
             scrub: true,
             toggleActions: "play none none reverse",
          },
       });
 
       nested_tl.to(image_div, {
-         clipPath: "polygon(0% 0%, 100% 0%, 100% 85%, 0% 85%)",
+         clipPath: "polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%)",
          y: -50,
          duration: 2,
          ease: "power1.inOut",
@@ -90,6 +90,7 @@ function animate_short_about_thumbnail(): void {
 }
 
 function init(): void {
+   create_recommended_list();
    hero_list_scroll();
    test_fetch_data();
    animate_short_about_paragraph();

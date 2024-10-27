@@ -1,7 +1,6 @@
 <?php
 require "../../src/lib/utils.php";
 $sql_connection = get_sql_connection();
-
 ?>
 
 <!DOCTYPE html>
