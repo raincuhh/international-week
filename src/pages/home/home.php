@@ -11,41 +11,49 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Il Sapore dell'Italia | Home">
   <meta name="twitter:description" content="Enjoy authentic Italian cuisine at Il Sapore dell'Italia.">
+
+  <!-- preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <!-- icons and favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="../../../public/assets/icons/favicon_new/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../../../public/assets/icons/favicon_new/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../../../public/assets/icons/favicon_new/favicon-16x16.png" />
   <link rel="manifest" href="../../../public/assets/icons/favicon_new/site.webmanifest" />
+
+  <!-- preload css -->
   <link rel="preload" href="../../../public/themes/fonts.css" as="style">
   <link rel="preload" href="../../../public/themes/variables.css" as="style">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="preload" href="../../../public/themes/fonts.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../../../public/themes/fonts.css"></noscript>
+  <link rel="preload" href="../../../public/themes/variables.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../../../public/themes/variables.css"></noscript>
+
+  <!-- async preload boxicons -->
+  <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"></noscript>
+
   <title>Il Sapore dell'Italia | Home</title>
+
   <script defer>
     function get_formatted_time() {
       let date_now = new Date();
       let week_day_unfm = date_now.getDay();
       let week_day_fm = (number) => {
           switch (number) {
-            case 1:
-              return "Mon";
-            case 2:
-              return "Tue";
-            case 3:
-              return "Wed";
-            case 4:
-              return "Thu";
-            case 5:
-              return "Fri";
-            case 6:
-              return "Sat";
-            case 7:
-              return "Sun";
-            default:
-              return "Unknown";
+            case 1:   return "Mon";
+            case 2:   return "Tue";
+            case 3:   return "Wed";
+            case 4:   return "Thu";
+            case 5:   return "Fri";
+            case 6:   return "Sat";
+            case 0:   return "Sun";
+            default:  return "Unknown";
             }
           };
       let date = date_now.getDate();
-      let month = date_now.getMonth();
+      let month = date_now.getMonth() + 1;
       let year = date_now.getFullYear();
 
       return week_day_fm(week_day_unfm) + " " + date + " " + month + " " + year;

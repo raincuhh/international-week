@@ -166,6 +166,7 @@
    font-size: var(--s-fs-hero-s);
    color: var(--s-main);
    font-family: var(--s-playfair-ff);
+   font-display: block;
 }
 
 @media (min-width: 537px) {
@@ -266,18 +267,25 @@
 .short_about > p {
    font-family: var(--s-playfair-ff);
    font-size: var(--s-fs-m);
-   color: var(--s-dark);
+   color: rgba(240, 232, 227, 0.103);
+   transition: color 0.5s ease;
 }
 
 @media (min-width: 609px) {
    .short_about {
       max-width: calc(100% - 12%);
    }
+   .short_about > p {
+      font-size: var(--s-fs-l);
+   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
    .short_about {
-      max-width: calc(100% - 20%);
+      max-width: calc(100% - 16%);
+   }
+   .short_about > p {
+      font-size: calc(var(--s-fs-xl) - 0.3rem);
    }
 }
 

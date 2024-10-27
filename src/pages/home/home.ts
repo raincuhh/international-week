@@ -18,21 +18,20 @@ function animate_short_about_paragraph() {
       target: target_,
       by: "chars",
    });
-   console.log(split[0].chars);
 
    const tl: GSAPTimeline = gsap
       .timeline({
          scrollTrigger: {
             trigger: trigger_,
             start: "top-=100% top",
-            end: "+=40%",
+            end: "+=30%",
             scrub: 0.25,
          },
       })
-      .set(
+      .to(
          split[0].chars,
          {
-            color: "#F0E8E3",
+            color: "#f0e8e3",
             stagger: 0.2,
          },
          0.1
