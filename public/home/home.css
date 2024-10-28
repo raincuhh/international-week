@@ -1,4 +1,4 @@
-@import url("../static/themes/variables.css");
+@import url("../shared/static/themes/variables.css");
 
 #root {
    background-color: var(--s-bg);

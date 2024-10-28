@@ -20,7 +20,7 @@
   <div class="short_about_thumbnail">
     <div class="short_about_thumbnail_centered">
       <div class="short_about_thumbnail_box_shadow"></div>
-      <img src="../../public/static/assets/images/italian_cuisine_bg_3.jpg" alt="short about thumbnail">
+      <img src="../../public/shared/static/assets/images/italian_cuisine_bg_3.jpg" alt="short about thumbnail">
     </div>
   </div>
 </section>

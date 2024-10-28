@@ -15,8 +15,8 @@ $sql_connection = get_sql_connection();
   ?>
   <title>Il Sapore dell'Italia | Home</title>
   <link rel="stylesheet" href="./home.css">
-  <link rel="stylesheet" href="../static/themes/loader.css">
-  <link rel="stylesheet" href="../static/themes/footer.css">
+  <link rel="stylesheet" href="../shared/static/themes/loader.css">
+  <link rel="stylesheet" href="../shared/static/themes/footer.css">
   <script defer src="../../out/page_scripts/home/home.bundle.js"></script>
 </head>
 

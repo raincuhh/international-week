@@ -6,7 +6,7 @@
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "tsc": "npx tsc --watch",
-      "build": "webpack --mode development --watch"
+      "build": "npx tsc && webpack --mode development --watch"
    },
    "author": "Filip Ryan Aaron Hunslund",
    "license": "MIT",
